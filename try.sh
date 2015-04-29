@@ -1,10 +1,8 @@
 #!/usr/bin/env bash
 autoreconf -f -i
 
-#export PYTHON=/Users/drufat/Applications/anaconda/bin/python
-#export PYTHON=/usr/bin/python
-#export PYTHON=/usr/local/bin/python3
-export PYTHON=/Users/drufat/Source/cpython/usr/bin/python3.5
+#export PYTHON=python2
+export PYTHON=python3
 
 ./configure
 make

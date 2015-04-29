@@ -11,7 +11,8 @@ AC_PROG_LIBTOOL
 AC_PROG_CC
 
 # Python checks
-AM_PATH_PYTHON(2.7)
+AM_PATH_PYTHON()
+AM_CONDITIONAL([HAVE_PYTHON], [test "$PYTHON" != :])
 PYTHON_INC=`$PYTHON -c 'import distutils.sysconfig as s; print(s.get_python_inc())'`
 PYTHON_CFLAGS="-I$PYTHON_INC"
 PYTHON_LIBS="-lpython$PYTHON_VERSION"
