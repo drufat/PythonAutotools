@@ -15,3 +15,7 @@ script:
     - ./try_autotools.sh
     - ./clean.sh
     - ./try_setup_py.sh
+
+notifications:
+  email: false
+
