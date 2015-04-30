@@ -1,0 +1,10 @@
+language: python
+
+os:
+    - linux
+    - osx
+
+script: 
+    - ./try_autotools.sh
+    - ./clean.sh
+    - ./try_setup_py.sh
