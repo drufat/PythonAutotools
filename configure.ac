@@ -1,4 +1,4 @@
-AC_PREREQ([2.69])
+#AC_PREREQ([2.69])
 AC_INIT([EmbedPython], [0.1])
 AM_INIT_AUTOMAKE([-Wall -Werror foreign])
 AM_SILENT_RULES([yes])
@@ -8,7 +8,7 @@ AM_PROG_AR
 AC_PROG_LIBTOOL
 AC_PROG_CXX
 
-CXXFLAGS+=" -std=c++11 "
+#CXXFLAGS+=" -std=c++11 "
 
 # Python checks
 AM_PATH_PYTHON()
