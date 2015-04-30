@@ -1,14 +1,14 @@
 AC_PREREQ([2.69])
 AC_INIT([EmbedPython], [0.1])
 AM_INIT_AUTOMAKE([-Wall -Werror foreign])
+AM_SILENT_RULES([yes])
 AM_PROG_AR
-AC_CONFIG_MACRO_DIR([m4])
-AC_CONFIG_SRCDIR([hellomodule.c])
-AC_CONFIG_HEADERS([config.h])
 
 # Checks for programs.
 AC_PROG_LIBTOOL
-AC_PROG_CC
+AC_PROG_CXX
+
+CXXFLAGS+=" -std=c++11 "
 
 # Python checks
 AM_PATH_PYTHON()
