@@ -4,6 +4,14 @@ os:
     - linux
     - osx
 
+python:
+    - "2.6"
+    - "2.7"
+    - "3.1"
+    - "3.2"
+    - "3.3"
+    - "3.4"
+
 script: 
     - ./try_autotools.sh
     - ./clean.sh
